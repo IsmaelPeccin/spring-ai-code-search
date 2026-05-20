@@ -7,5 +7,5 @@ import java.util.List;
 public interface VectorStorePort {
     void save(CodeChunk chunk, List<Float> embedding);
 
-    List<CodeChunk> findSimilar(List<Float> queryEmbedding);
+    List<CodeChunk> findSimilar(List<Float> queryEmbedding, int topK);
 }
